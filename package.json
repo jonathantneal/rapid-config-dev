@@ -1,0 +1,40 @@
+{
+  "name": "rapid-config-dev",
+  "version": "1.0.0",
+  "description": "A shareable configuration package for rapid",
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "license": "CC0-1.0",
+  "repository": "jonathantneal/rapid-config-dev",
+  "homepage": "https://github.com/jonathantneal/rapid-config-dev",
+  "bugs": "https://github.com/jonathantneal/rapid-config-dev/issues",
+  "main": ".config.js",
+  "files": [
+    ".config.js"
+  ],
+  "scripts": {
+    "lint": "echint",
+    "prepublish": "npm test",
+    "test": "npm run lint"
+  },
+  "dependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.1.8",
+    "cssnano": "^3.10.0",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-easings": "^0.3.0",
+    "postcss-partial-import": "^3.1.0",
+    "postcss-short": "^3.0.3",
+    "postcss-svg-fragments": "^2.2.0",
+    "postcss-vmax": "^1.0.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-uglify": "^1.0.1"
+  },
+  "devDependencies": {
+    "echint": "^2.1.1",
+    "echint-config-dev": "^1.0.0"
+  },
+  "echint": {
+    "extends": "dev"
+  }
+}
