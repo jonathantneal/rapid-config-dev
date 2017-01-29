@@ -12,10 +12,12 @@ module.exports = {
 			require('cssnano')({
 				'autoprefixer': false
 			})
-		]
+		],
+		syntax: require('postcss-scss')
 	},
 	js: {
 		plugins: [
+			require('rollup-plugin-json')(),
 			require('rollup-plugin-node-resolve')({
 				jsnext: true
 			}),

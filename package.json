@@ -23,10 +23,12 @@
     "postcss-cssnext": "^2.9.0",
     "postcss-easings": "^0.3.0",
     "postcss-partial-import": "^3.1.0",
+    "postcss-scss": "^0.4.0",
     "postcss-short": "^3.0.3",
     "postcss-svg-fragments": "^2.2.0",
     "postcss-vmax": "^1.0.0",
     "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-json": "^2.1.0",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-uglify": "^1.0.1"
   },
