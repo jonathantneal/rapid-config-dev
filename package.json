@@ -12,6 +12,7 @@
     ".config.js"
   ],
   "scripts": {
+    "clean": "git clean -X -d -f",
     "lint": "echint",
     "prepublish": "npm test",
     "test": "npm run lint"
