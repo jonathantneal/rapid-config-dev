@@ -23,12 +23,10 @@ module.exports = {
 			}),
 			require('rollup-plugin-babel')({
 				presets: [
-					[
-						require('babel-preset-env'),
-						{
-							modules: false
-						}
-					]
+					require('babel-preset-env')({
+						loose: true,
+						modules: false
+					})
 				],
 				plugins: [
 					require('babel-plugin-external-helpers')
