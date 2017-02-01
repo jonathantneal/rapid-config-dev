@@ -1,6 +1,6 @@
 {
   "name": "rapid-config-dev",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A shareable configuration package for rapid",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
@@ -29,6 +29,7 @@
     "postcss-svg-fragments": "^2.2.0",
     "postcss-vmax": "^1.0.0",
     "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^7.0.0",
     "rollup-plugin-json": "^2.1.0",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-uglify": "^1.0.1"

@@ -21,6 +21,9 @@ module.exports = {
 			require('rollup-plugin-node-resolve')({
 				jsnext: true
 			}),
+			require('rollup-plugin-commonjs')({
+				include: 'node_modules/**'
+			}),
 			require('rollup-plugin-babel')({
 				presets: [
 					require('babel-preset-env')({
