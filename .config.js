@@ -18,21 +18,22 @@ module.exports = {
 	js: {
 		plugins: [
 			require('rollup-plugin-json')(),
-			require('rollup-plugin-node-resolve')({
-				jsnext: true
-			}),
+			require('rollup-plugin-node-resolve')(),
 			require('rollup-plugin-commonjs')({
 				include: 'node_modules/**'
 			}),
 			require('rollup-plugin-babel')({
-				presets: [
-					require('babel-preset-env')({
-						loose: true,
-						modules: false
-					})
-				],
+				babelrc: false,
 				plugins: [
 					require('babel-plugin-external-helpers')
+				],
+				presets: [
+					[
+						require('babel-preset-env'),
+						{
+							modules: false
+						}
+					]
 				]
 			}),
 			require('rollup-plugin-uglify')()
