@@ -3,14 +3,15 @@ module.exports = {
 		plugins: [
 			require('postcss-partial-import')(),
 			require('postcss-cssnext')({
-				'autoprefixer': false
+				autoprefixer: false
 			}),
 			require('postcss-easings')(),
 			require('postcss-short')(),
 			require('postcss-svg-fragments')(),
 			require('postcss-vmax')(),
 			require('cssnano')({
-				'autoprefixer': false
+				autoprefixer: false,
+				svgo: false
 			})
 		],
 		syntax: require('postcss-scss')
