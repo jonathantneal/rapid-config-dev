@@ -11,6 +11,7 @@ module.exports = {
 			require('postcss-vmax')(),
 			require('cssnano')({
 				autoprefixer: false,
+				normalizeUrl: false,
 				svgo: false
 			})
 		],
